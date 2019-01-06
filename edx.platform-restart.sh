@@ -1,22 +1,20 @@
 #!/bin/bash
-#---------------------------------------------------------
-# written by: lawrence mcdaniel
-#             https://lawrencemcdaniel.com
-#             https://blog.lawrencemcdaniel.com
-#
-# date:       feb-2018
-#
-# usage:      the correct commands to restart Open edX services without entirely rebooting the Ubuntu server.
-#
-# reference:  https://openedx.atlassian.net/wiki/spaces/OpenOPS/pages/60227913/Managing+OpenEdX+Tips+and+Tricks
+# 
+# Este script é um FORK do original, preparado por Lawrence McDaniel
+# (https://github.com/lpm0073), para restartar a plataforma Open edX,
+# mas somente o "core" da plataforma (LMS/CMS/EDXAPP_WORKERS).
 #---------------------------------------------------------
 
+# Restartar "core" do Open edX:
+sudo /edx/bin/supervisorctl restart lms
+sudo /edx/bin/supervisorctl restart cms
+sudo /edx/bin/supervisorctl restart edxapp_worker:
 
-# These are the commands for restarting the LMS and CMS beginning with Gingko
-/edx/bin/supervisorctl restart lms
-/edx/bin/supervisorctl restart cms
+# Ver o status após o restart:
+sudo /edx/bin/supervisorctl status
 
-# If you're running a previous version of Open edX then use this command instead
-#/edx/bin/supervisorctl restart edxapp:
+# Restartar nginx:
+sudo systemctl restart nginx
 
-/edx/bin/supervisorctl restart edxapp_worker:
+# Ver o status após o restart:
+sudo systemctl status nginx
