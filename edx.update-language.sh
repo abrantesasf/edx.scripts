@@ -4,7 +4,7 @@
 #             https://lawrencemcdaniel.com
 #             https://blog.lawrencemcdaniel.com
 #
-# date:       feb-2018
+# date:       feb-2018 
 #
 # usage:      (if your site is in English then you definitely do not need this script)
 #             Download and install Transifex language translation files.

@@ -1,0 +1,7 @@
+alias lsl='ls -lh'
+alias lsa='ls -lha'
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias rm='rm -i'
+alias edx='sudo -H -u edxapp bash'

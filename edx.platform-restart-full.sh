@@ -4,7 +4,7 @@
 #             https://lawrencemcdaniel.com
 #             https://blog.lawrencemcdaniel.com
 #
-# date:       oct-2018
+# date:       oct-2018 
 #
 # usage:      Full restart of the Open edX platform, including all subsystems.
 #
