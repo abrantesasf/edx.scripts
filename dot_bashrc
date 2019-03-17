@@ -128,3 +128,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Lê ambiente e vai para home Open edX, se o usuário for o "edxapp":
+if [ $USER == "edxapp" ]; then
+  if [ -f ~/edxapp_env ]; then
+    . ~/edxapp_env
+    cd ~
+  fi
+fi
