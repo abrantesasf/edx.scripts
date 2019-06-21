@@ -34,7 +34,7 @@ export LC_IDENTIFICATION="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
 # 1. Configura a variável OPENEDX_RELEASE:
-export OPENEDX_RELEASE=open-release/ironwood.2
+export OPENEDX_RELEASE=open-release/ironwood.master
 
 # 2. Hora de levantar o Ansible:
 wget https://raw.githubusercontent.com/edx/configuration/$OPENEDX_RELEASE/util/install/ansible-bootstrap.sh -O - | sudo -H bash
