@@ -11,6 +11,9 @@
 # Execução: sudo nohup ./edx.platform-install.sh &
 #---------------------------------------------------------
 
+# Copia config.yml para HOME:
+cp config.yml ~
+
 # Vai para diretório HOME:
 cd ~
 
@@ -29,7 +32,6 @@ export LC_TELEPHONE="en_US.UTF-8"
 export LC_MEASUREMENT="en_US.UTF-8"
 export LC_IDENTIFICATION="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
-
 
 # 1. Configura a variável OPENEDX_RELEASE:
 export OPENEDX_RELEASE=open-release/ironwood.2
