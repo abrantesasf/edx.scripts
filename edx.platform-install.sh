@@ -32,7 +32,7 @@ export LC_ALL="en_US.UTF-8"
 
 
 # 1. Configura a variável OPENEDX_RELEASE:
-export OPENEDX_RELEASE=open-release/hawthorn.master
+export OPENEDX_RELEASE=open-release/ironwood.2
 
 # 2. Hora de levantar o Ansible:
 wget https://raw.githubusercontent.com/edx/configuration/$OPENEDX_RELEASE/util/install/ansible-bootstrap.sh -O - | sudo -H bash
