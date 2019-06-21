@@ -39,6 +39,9 @@ export OPENEDX_RELEASE=open-release/ironwood.master
 # 2. Hora de levantar o Ansible:
 wget https://raw.githubusercontent.com/edx/configuration/$OPENEDX_RELEASE/util/install/ansible-bootstrap.sh -O - | sudo -H bash
 
+# 2.5 Ativa o ambiente virtual do Ansible:
+. /edx/app/edx_ansible/venvs/edx_ansible/bin/activate
+
 # 3. Hora de criar senhas aleatórias fortes, que serão utilizadas na
 # instalação do Opne edX:
 wget https://raw.githubusercontent.com/edx/configuration/$OPENEDX_RELEASE/util/install/generate-passwords.sh -O - | bash
