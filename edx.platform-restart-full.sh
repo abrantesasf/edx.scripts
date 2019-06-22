@@ -33,3 +33,9 @@ sudo /edx/bin/supervisorctl restart xqueue_consumer
 
 # Generate a status report of all services
 sudo /edx/bin/supervisorctl status
+
+# Restartar nginx:
+sudo systemctl restart nginx
+
+# Ver o status após o restart:
+sudo systemctl status nginx
