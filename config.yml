@@ -1,2 +1,2 @@
 EDXAPP_LMS_BASE: "cursos.magister.pro.br"
-EDXAPP_CMS_BASE: "cursos.magister.pro.br:18010"
+EDXAPP_CMS_BASE: "studio.magister.pro.br:18010"
